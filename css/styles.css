@@ -9,15 +9,11 @@ html {
 
 html, body {
     scroll-behavior: smooth;
-    max-width:100%;
     width:100%;
     height:auto;
     font-family:rustFont!important;
     margin:0;
     padding:0;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat!important;
     -webkit-animation:fadein 2s; 
     -moz-animation:fadein 2s; 
     -ms-animation:fadein 2s; 
@@ -254,6 +250,7 @@ a:active {
     background-image: url(../images/BGI_6.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     background-position: 50% 15%;
     height:300px;
     text-align:center;
@@ -311,64 +308,64 @@ a:active {
         position: fixed;
         width: 100%;
         z-index: 3;
-      }
+    }
       
-      .header ul {
+    .header ul {
         margin: 0;
         padding: 0;
         list-style: none;
         overflow: hidden;
         background-color: #fff;
-      }
+    }
       
-      .header li a {
+    .header li a {
         color:black;
         display: block;
         padding: 20px 20px;
         border-right: 1px solid #f4f4f4;
         text-decoration: none;
         text-shadow: 1px 1px 1px #000000;
-      }
+    }
       
-      .header li a:hover {
+    .header li a:hover {
         color:white;
         background: #ce422b;
-      }
+    }
       
-      .header .logo {
+    .header .logo {
         display: block;
         float: left;
         font-size: 2em;
         padding: 10px 20px;
         text-decoration: none;
-      }
+    }
       
-      .header .menu {
+    .header .menu {
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
-      }
+    }
     
-      .header .menu-icon {
+    .header .menu-icon {
         cursor: pointer;
         display: inline-block;
         float: right;
         padding: 28px 20px;
         position: relative;
         user-select: none;
-      }
+    }
       
-      .header .menu-icon .navicon {
+    .header .menu-icon .navicon {
         background: #333;
         display: block;
         height: 2px;
         position: relative;
         transition: background .2s ease-out;
         width: 18px;
-      }
+    }
       
-      .header .menu-icon .navicon:before,
-      .header .menu-icon .navicon:after {
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
         background: #333;
         content: '';
         display: block;
@@ -376,51 +373,56 @@ a:active {
         position: absolute;
         transition: all .2s ease-out;
         width: 100%;
-      }
+    }
       
-      .header .menu-icon .navicon:before {
+    .header .menu-icon .navicon:before {
         top: 5px;
-      }
+    }
       
-      .header .menu-icon .navicon:after {
+    .header .menu-icon .navicon:after {
         top: -5px;
-      }
+    }
     
-      .header .menu-btn {
+    .header .menu-btn {
         display: none;
-      }
+    }
       
-      .header .menu-btn:checked ~ .menu {
+    .header .menu-btn:checked ~ .menu {
         max-height: 240px;
-      }
+    }
       
-      .header .menu-btn:checked ~ .menu-icon .navicon {
+    .header .menu-btn:checked ~ .menu-icon .navicon {
         background: white;
-      }
+    }
 
-      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
         background: white;
-      }
-      
-      .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
         background: white;
-      }
+    }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
 
     .navBarWrapper {
         display:none;
     }
 
     .spacer img {
+        padding-bottom:0;
         position: absolute;
         width:300px;
         height:auto;
-        padding-bottom:75px;
         left:50%;
         transform: translate(-50%,-50%);
     }
 
     .spacer a{
-        margin-top:100px;
+        display:none;
     }
 
     .info {

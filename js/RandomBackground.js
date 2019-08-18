@@ -1,21 +1,31 @@
 
-var screenHeight=screen.height;
-var screenWidth=screen.width;
+const screenHeight = screen.height;
+const screenWidth = screen.width;
 
-if (screenWidth <= 640){
+const phoneBackground = document.querySelector(".spacer");
+/*
+    const spacerElements = document.getElementsByClassName("spacer");
+    const firstSpacer = spacerElements[0];
+*/
+
+if (screenWidth <= 768){
     window.addEventListener('DOMContentLoaded', () => {
-    const backgroundImages = [
-        "BGI_1",
-        "BGI_2",
-        "BGI_3",
-        "BGI_4",
-        "BGI_5",
-        "BGI_6",
-        "BGI_7",
-        "BGI_8"
-    ]
-    const num = Math.ceil(Math.random() * backgroundImages.length - 1);
-    document.body.style.background = `url('./images/${backgroundImages[num]}.png')`;
+        const backgroundImages = [
+            "BGI_1",
+            "BGI_2",
+            "BGI_3",
+            "BGI_4",
+            "BGI_5",
+            "BGI_6",
+            "BGI_7",
+            "BGI_8"
+        ]
+        const num = Math.ceil(Math.random() * backgroundImages.length - 1);
+        phoneBackground.style.background = `url('./images/${backgroundImages[num]}.png')`;
+        phoneBackground.style.backgroundRepeat = "no-repeat";
+        phoneBackground.style.backgroundSize = "cover";
+        phoneBackground.style.display = "block";
+        phoneBackground.style.margin = "0 auto";
     })
 } else {
     window.addEventListener('DOMContentLoaded', () => {
