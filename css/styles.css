@@ -289,7 +289,7 @@ a:active {
       .header .menu-icon {
         cursor: pointer;
         display: inline-block;
-        float: left;
+        float: right;
         padding: 28px 20px;
         position: relative;
         user-select: none;
@@ -332,11 +332,15 @@ a:active {
       }
       
       .header .menu-btn:checked ~ .menu-icon .navicon {
-        background: transparent;
+        background: white;
+      }
+
+      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        background: white;
       }
       
       .header .menu-btn:checked ~ .menu-icon .navicon:after {
-        color: white;
+        background: white;
       }
 
     #navBarWrapper {
