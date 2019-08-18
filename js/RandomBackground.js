@@ -8,7 +8,7 @@ const phoneBackground = document.querySelector(".spacer");
     const firstSpacer = spacerElements[0];
 */
 
-if (screenWidth <= 768){
+if (screenWidth <= 700){
     window.addEventListener('DOMContentLoaded', () => {
         const backgroundImages = [
             "BGI_1",
