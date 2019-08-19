@@ -23,9 +23,10 @@ if (screenWidth <= 700){
         const num = Math.ceil(Math.random() * backgroundImages.length - 1);
         phoneBackground.style.background = `url('./images/${backgroundImages[num]}.png')`;
         phoneBackground.style.backgroundRepeat = "no-repeat";
-        phoneBackground.style.backgroundSize = "cover";
-        phoneBackground.style.display = "block";
-        phoneBackground.style.margin = "0 auto";
+        phoneBackground.style.backgroundAttachment = "fixed";
+        phoneBackground.style.backgroundPosition = "center bottom 200px";
+        phoneBackground.style.backgroundSize = "auto 100%";
+        phoneBackground.style.overflow = "0";
     })
 } else {
     window.addEventListener('DOMContentLoaded', () => {

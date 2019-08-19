@@ -247,11 +247,11 @@ a:active {
 }
 
 .donationContainer {
-    background-image: url(../images/DBG.png);
+    background-image: url(../images/DBG.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 15%;
+    background-position: center;
     height:300px;
     text-align:center;
     padding-bottom:100px;
@@ -455,5 +455,41 @@ a:active {
         width:300px;
         height:auto;
     }
+
+    .credit {
+        font-size: 9.5px;
+    }
+
+    .copy {
+        font-size: 9.5px;
+    }
+}
+
+@media screen and (orientation:landscape)  
+    and (max-device-width: 900px){
+
+    .nav a {
+        margin-top:0;
+    }
+
+    .navBarWrapper {
+        height:58px;
+    }
+
+    .spacer img {
+        width:300px;
+        padding-bottom:75px;
+    }
+
+    .spacer a {
+        display:none;
+    }
+    
+    .spacer {
+        padding: 125px;
+        background-attachment:fixed!important; 
+        background-position: center!important;
+        background-size:100% auto!important;
+   }
 }
 
