@@ -27,6 +27,11 @@ if (screenWidth <= 700){
         phoneBackground.style.backgroundPosition = "center bottom 0px";
         phoneBackground.style.backgroundSize = "auto 100%";
         phoneBackground.style.overflow = "0";
+        phoneBackground.style.webkitAnimation = "fadein 2s"; 
+        phoneBackground.style.mozAnimation = "fadein 2s"; 
+        phoneBackground.style.msAnimation = "fadein 2s"; 
+        phoneBackground.style.oAnimation = "fadein 2s"; 
+        phoneBackground.style.animation = "fadein 2s";
     })
 } else {
     window.addEventListener('DOMContentLoaded', () => {
