@@ -104,6 +104,7 @@ html, body {
 .spacer {
     height:100vh;
     position: relative;
+    z-index: -15!important;
 }
 
 .navBarWrapper {
@@ -160,18 +161,18 @@ a:active {
 }
 
 .info {
-    padding:15px;
-    padding-top:100px;
-    padding-bottom:50px;
+    margin-top:50px;
+    margin-bottom:50px;
     display: inline-block;
 }
 
 .info p {
     font-family: "Arial Black", Gadget, sans-serif!important;
     font-size:13px;
-    padding:15px;
-    width:340px;
+    width:350px;
     height:100%;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .information i {
@@ -379,6 +380,14 @@ a:active {
         display:none;
     }
 
+    .info p {
+        font-family: "Arial Black", Gadget, sans-serif!important;
+        font-size:13px;
+        width:100%;
+        margin:0;
+        margin-top:10px;
+    }
+
     .logo img {
         width:75%!important;
         position: absolute;
@@ -391,7 +400,6 @@ a:active {
 
     .support p {
         width:75%;
-        height:auto;
     }
 
     .credit {
@@ -400,6 +408,14 @@ a:active {
 
     .copy {
         font-size: 9.5px;
+    }
+
+    .copy {
+        font-size:50%;
+    }
+    
+    .credit {
+        font-size:50%;
     }
 }
 
