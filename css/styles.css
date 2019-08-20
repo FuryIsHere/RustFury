@@ -448,14 +448,6 @@ a:active {
 @media screen and (orientation:landscape)  
     and (max-device-width: 900px){
 
-    .nav a {
-        margin-top:0;
-    }
-
-    .navBarWrapper {
-        height:58px;
-    }
-
     .spacer img {
         width:300px;
         padding-bottom:75px;
