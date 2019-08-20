@@ -24,7 +24,7 @@ if (screenWidth <= 700){
         phoneBackground.style.background = `url('./images/${backgroundImages[num]}.png')`;
         phoneBackground.style.backgroundRepeat = "no-repeat";
         phoneBackground.style.backgroundAttachment = "fixed";
-        phoneBackground.style.backgroundPosition = "center bottom 200px";
+        phoneBackground.style.backgroundPosition = "center bottom 0px";
         phoneBackground.style.backgroundSize = "auto 100%";
         phoneBackground.style.overflow = "0";
     })
