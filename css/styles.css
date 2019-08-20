@@ -21,7 +21,7 @@ html, body {
     animation:fadein 2s;
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 850px){
 .header {
     display:none;
   }
@@ -284,7 +284,7 @@ a:active {
 
 /* Responsive code below. */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 850px) {
 
     .header {
         background-color: #ce422b;
@@ -448,22 +448,18 @@ a:active {
 @media screen and (orientation:landscape)  
     and (max-device-width: 900px){
 
-    .navBarWrapper {
-        position:fixed;
-        top:0!important;
-    }
 
     .nav a {
-        padding:20px;
+        padding:10px;
     }
 
     .spacer img {
         width:300px;
-        padding-bottom:75px;
+        padding-bottom:50px;
     }
     
     .spacer {
-        padding: 125px;
+        padding: 225px;
         background-attachment:fixed!important; 
         background-position: center!important;
         background-size:100% auto!important;
